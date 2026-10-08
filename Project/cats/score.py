@@ -20,8 +20,8 @@ if __name__ == '__main__':
     correctly_corrected, incorrectly_corrected, not_corrected, trial_counter = 0, 0, 0, 0
     for correct in correct_words:
         elapsed_time = time.time() - start_time
-        if elapsed_time > 45:
-            break
+        # if elapsed_time > 45:
+            # break
         typos = test_dict[correct]
         for_print = f"{correct}\n"
         for typo in typos:
